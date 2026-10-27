@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Keystack</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; }
+    .customer { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; }
+    .revoked { color: #999; text-decoration: line-through; }
+    #new-key { background: #eef; padding: 0.5rem; font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h1>Keystack</h1>
+
+  <form id="customer-form">
+    <input id="name" placeholder="Customer name" required>
+    <input id="email" placeholder="Email">
+    <button type="submit">Add customer</button>
+  </form>
+
+  <p id="new-key" hidden></p>
+
+  <h2>Customers</h2>
+  <div id="customers"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
